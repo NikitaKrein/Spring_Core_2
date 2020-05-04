@@ -1,0 +1,107 @@
+Start postProcessBeforeInitialization
+
+Init method of Salary Service
+
+Start postProcessAfterInitialization
+FACTORY OF EMPLOYEE BEAN
+
+
+The boss Tim hired employees:
+Tim - BOSS - 615$ - {Email=10000}
+Nik - Barista - 96$ - {Make coffee=100}
+Victoria - Junior - 3$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+January
+Tim - BOSS - 615$ - {Email=10000}
+Nik - Barista - 96$ - {Make coffee=100}
+Victoria - Junior - 3$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+
+Destroy method of Salary Service
+
+February
+Tim - BOSS - 820$ - {Email=10000}
+Nik - Barista - 96$ - {Make coffee=100}
+Victoria - Junior - 3$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+March
+Tim - BOSS - 820$ - {Email=10000}
+Nik - Barista - 165$ - {Make coffee=100}
+Victoria - Junior - 3$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+April
+Delete Barista Nik
+Tim - BOSS - 820$ - {Email=10000}
+Victoria - Junior - 3$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+May
+Tim - BOSS - 820$ - {Email=10000}
+Victoria - Junior - 3$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+June
+Tim - BOSS - 820$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+July
+Tim - BOSS - 296$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 500$ - {C++=100, Java=125, Python=455}
+
+
+August
+Tim - BOSS - 296$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 596$ - {C++=100, Java=125, Python=455}
+
+
+September
+Tim - BOSS - 300$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 596$ - {C++=100, Java=125, Python=455}
+
+
+October
+Tim - BOSS - 300$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 596$ - {C++=100, Java=125, Python=455}
+
+
+November
+Tim - BOSS - 300$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 596$ - {C++=100, Java=125, Python=455}
+
+
+December
+Add Nik on position Junior
+Tim - BOSS - 514$ - {Email=10000}
+Victoria - Junior - 1$ - {Java=1, JS=1}
+Nik - Junior - 1$ - {Java=1, JS=1}
+Geno - Middle - 300$ - {JAVA=5, JS=5}
+Margaret - Senior - 596$ - {C++=100, Java=125, Python=455}

@@ -1,0 +1,12 @@
+Constructor worked
+Bean F was initialized
+A{name='class A named with properties', number=1}
+B{field_A=A{name='class A named with properties', number=1}, number=2}
+C{number=3}
+d = D{number=4}
+dd = D{number=4}
+d == dd is false, because scope - prototype
+E{number=5}
+Replace method doingSomething in class E!
+F{number=6}
+Bean F will be deleted now!

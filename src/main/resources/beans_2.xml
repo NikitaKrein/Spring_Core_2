@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:util="http://www.springframework.org/schema/util"
+
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+
+    <bean id="bigSalary"
+          class="task_2.bean.Salary">
+        <constructor-arg value="500"/>
+    </bean>
+
+    <bean id="middleSalary"
+          class="task_2.bean.Salary">
+        <constructor-arg value="300"/>
+    </bean>
+
+    <bean id="lowSalary"
+          class="task_2.bean.Salary">
+        <constructor-arg >
+            <util:constant static-field="java.lang.Math.PI"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="salary"
+          class="task_2.bean.Salary">
+        <constructor-arg value="#{T(java.lang.Math).random() * 1000}"/>
+    </bean>
+
+    <bean id="baristaSalary"
+          class="task_2.bean.Salary">
+        <constructor-arg value="#{T(java.lang.Math).random() * 100}"/>
+    </bean>
+
+
+    <bean id="barista"
+          class="task_2.bean.Position">
+        <constructor-arg value="Barista"/>
+        <constructor-arg ref="baristaSalary"/>
+        <constructor-arg>
+            <map>
+                <entry key="Make coffee" value="100"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="junior"
+          class="task_2.bean.Position">
+        <constructor-arg value="Junior"/>
+        <constructor-arg ref="lowSalary"/>
+        <constructor-arg>
+            <map>
+                <entry key="Java" value="1"/>
+                <entry key="JS" value="1"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="middle"
+          class="task_2.bean.Position">
+        <constructor-arg value="Middle"/>
+        <constructor-arg ref="middleSalary"/>
+        <constructor-arg>
+            <map>
+                <entry key="JAVA" value="5"/>
+                <entry key="JS" value="5"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="senior"
+          class="task_2.bean.Position">
+        <constructor-arg value="Senior"/>
+        <constructor-arg ref="bigSalary"/>
+        <constructor-arg>
+            <map>
+                <entry key="C++" value="100"/>
+                <entry key="Java" value="125"/>
+                <entry key="Python" value="455"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="boss"
+          class="task_2.bean.Position">
+        <constructor-arg value="BOSS"/>
+        <constructor-arg ref="salary"/>
+        <constructor-arg>
+            <map>
+                <entry key="Email" value="10000"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="employeeFactory"
+          class="task_2.factory.EmployeeFactory">
+    </bean>
+
+    <bean id="firstEmployee"
+          class="task_2.bean.Employee">
+        <constructor-arg value="Nik"/>
+    </bean>
+
+    <bean id="secondEmployee"
+          class="task_2.bean.Employee">
+        <constructor-arg value="Victoria"/>
+    </bean>
+
+    <bean id="thirdEmployee"
+          class="task_2.bean.Employee">
+        <constructor-arg value="Geno"/>
+    </bean>
+
+    <bean id="fourthlyEmployee"
+          class="task_2.bean.Employee">
+        <constructor-arg value="Margaret"/>
+    </bean>
+
+    <bean id="fifthEmployee"
+          class="task_2.bean.Employee">
+        <constructor-arg value="Tim"/>
+    </bean>
+
+
+</beans>
